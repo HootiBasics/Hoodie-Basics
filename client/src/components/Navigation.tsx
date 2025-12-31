@@ -39,7 +39,7 @@ export function Navigation() {
             <img 
               src="/logo.png" 
               alt={HOOTI_CONFIG.siteName} 
-              className="h-10 w-auto brightness-0 invert transition-transform group-hover:scale-110" 
+              className="h-10 w-auto transition-transform group-hover:scale-110" 
             />
             <span className="text-2xl font-black font-display tracking-tighter hover:text-primary transition-colors">
               {HOOTI_CONFIG.siteName}
@@ -88,7 +88,7 @@ export function Navigation() {
           >
             <div className="p-6 flex justify-between items-center border-b border-white/10">
               <div className="flex items-center gap-2">
-                <img src="/logo.png" alt={HOOTI_CONFIG.siteName} className="h-8 w-auto brightness-0 invert" />
+                <img src="/logo.png" alt={HOOTI_CONFIG.siteName} className="h-8 w-auto" />
                 <span className="text-2xl font-black font-display">{HOOTI_CONFIG.siteName}</span>
               </div>
               <button onClick={() => setIsMobileMenuOpen(false)}>
