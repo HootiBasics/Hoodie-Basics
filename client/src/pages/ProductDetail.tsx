@@ -1,13 +1,25 @@
 import { useRoute, useLocation } from "wouter";
 import { HOOTI_CONFIG } from "@/lib/config";
-import { MessageCircle, ArrowLeft } from "lucide-react";
+import useEmblaCarousel from "embla-carousel-react";
+import { MessageCircle, ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useCallback } from "react";
 
 export default function ProductDetail() {
   const [, params] = useRoute("/product/:id");
   const [, setLocation] = useLocation();
   const id = params ? parseInt(params.id) : null;
   const product = HOOTI_CONFIG.products.find(p => p.id === id);
+
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
 
   if (!product) return <div className="min-h-screen flex items-center justify-center">Product not found</div>;
 
@@ -34,14 +46,43 @@ export default function ProductDetail() {
       </button>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
-        {/* Left: Gallery (Single Image) */}
+        {/* Left: Gallery (Carousel) */}
         <div className="space-y-4">
-          <div className="overflow-hidden border border-white/10 bg-card aspect-[4/5] relative group">
-            <img 
-              src={product.images[0]} 
-              className="w-full h-full object-cover" 
-              alt={product.name} 
-            />
+          <div className="overflow-hidden border border-white/10 bg-card aspect-[4/5] relative group" ref={emblaRef}>
+            <div className="flex h-full">
+              {product.images.map((src, i) => (
+                <div className="flex-[0_0_100%] min-w-0 relative h-full" key={i}>
+                  <img 
+                    src={src} 
+                    className="w-full h-full object-cover" 
+                    alt={`${product.name} - Imagen ${i + 1}`} 
+                  />
+                </div>
+              ))}
+            </div>
+            
+            {product.images.length > 1 && (
+              <>
+                <button 
+                  onClick={scrollPrev}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/50 border border-white/10 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity z-10"
+                >
+                  <ChevronLeft className="w-6 h-6" />
+                </button>
+                <button 
+                  onClick={scrollNext}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/50 border border-white/10 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity z-10"
+                >
+                  <ChevronRight className="w-6 h-6" />
+                </button>
+                
+                <div className="absolute inset-x-0 bottom-4 flex justify-center gap-2 z-10">
+                  {product.images.map((_, i) => (
+                    <div key={i} className="w-2 h-2 rounded-full bg-white/30 backdrop-blur" />
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         </div>
 
