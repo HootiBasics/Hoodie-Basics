@@ -7,88 +7,103 @@ export const HOOTI_CONFIG: SiteConfig = {
     numberClean: "584147170695"
   },
   hero: {
-    title: "Estilo que habla por ti",
+    title: "Hooti Basics",
     subtitle: "Hoodies exclusivos diseñados para quienes no siguen tendencias, las crean",
     badge: "TALLA ÚNICA OVERSIZED"
   },
   products: [
     {
       id: 1,
-      name: "Hoodie Urban Owl Black",
+      name: "Giant's Football Sweatshirt",
       price: 45.00,
       currency: "$",
-      description: "El equilibrio perfecto entre comodidad y estilo urbano. Diseñado para destacar en la noche.",
-      images: [
-        "https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=1000&auto=format&fit=crop", // Placeholder
-        "https://images.unsplash.com/photo-1578768079052-aa76e52ff62e?q=80&w=1000&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop"
-      ],
+      description: "Sudadera clásica con diseño Giant's Football. Comodidad y estilo deportivo.",
+      images: ["/products/product1.jpg"],
       colors: [
-        { name: "Negro", hex: "#0a0a0a", available: true },
-        { name: "Gris", hex: "#808080", available: true },
-        { name: "Blanco", hex: "#FFFFFF", available: false }
+        { name: "Navy", hex: "#1a1a2e", available: true }
       ],
-      category: "best-seller",
-      badge: "🔥 Best Seller",
-      materials: "100% Algodón Premium Heavyweight",
-      care: "Lavar a máquina en agua fría, secar al aire",
+      category: "classic",
+      badge: "⭐ Clásico",
+      materials: "Algodón Premium",
+      care: "Lavar a máquina",
       fit: "Oversized - Talla Única"
     },
     {
       id: 2,
-      name: "Midnight Prowler",
-      price: 50.00,
+      name: "Freaks Night Out",
+      price: 48.00,
       currency: "$",
-      description: "Edición limitada con detalles reflectantes. Para los que viven cuando el sol se oculta.",
-      images: [
-        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?q=80&w=1000&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=1000&auto=format&fit=crop"
-      ],
+      description: "Diseño audaz con gráficos de terror urbano. Para destacar en la multitud.",
+      images: ["/products/product2.jpg"],
       colors: [
-        { name: "Navy", hex: "#1a1a2e", available: true },
         { name: "Negro", hex: "#000000", available: true }
       ],
       category: "limited",
       badge: "💎 Limitado",
-      materials: "Mezcla Algodón/Poliéster Técnico",
-      care: "Lavar a mano recomendado",
+      materials: "Algodón Heavyweight",
+      care: "Lavar a máquina",
       fit: "Oversized - Talla Única"
     },
     {
       id: 3,
-      name: "Forest Guardian",
-      price: 48.00,
+      name: "Colorado Avalanche Hoodie",
+      price: 50.00,
       currency: "$",
-      description: "Inspirado en los tonos de la naturaleza nocturna. Un clásico reinventado.",
-      images: [
-        "https://images.unsplash.com/photo-1620799140408-ed5341cd2431?q=80&w=1000&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop"
-      ],
+      description: "Homenaje al estilo hockey. Diseño minimalista y robusto.",
+      images: ["/products/product3.jpg"],
       colors: [
-        { name: "Verde Bosque", hex: "#2d4a22", available: true },
-        { name: "Tierra", hex: "#5d4037", available: true }
+        { name: "Gris Carbón", hex: "#333333", available: true }
       ],
-      category: "new",
-      badge: "🆕 Nuevo",
-      materials: "100% Algodón Orgánico",
-      care: "Lavado suave",
+      category: "best-seller",
+      badge: "🔥 Best Seller",
+      materials: "Algodón Premium",
+      care: "Lavar a máquina",
       fit: "Oversized - Talla Única"
     },
     {
       id: 4,
-      name: "Street Phantom",
+      name: "The Dead Wake Up",
+      price: 45.00,
+      currency: "$",
+      description: "Gráficos detallados con temática zombi. Estilo rebelde y auténtico.",
+      images: ["/products/product4.jpg"],
+      colors: [
+        { name: "Negro", hex: "#000000", available: true }
+      ],
+      category: "new",
+      badge: "🆕 Nuevo",
+      materials: "Algodón Orgánico",
+      care: "Lavar a máquina",
+      fit: "Oversized - Talla Única"
+    },
+    {
+      id: 5,
+      name: "I Got That Dog In Me",
       price: 42.00,
       currency: "$",
-      description: "Minimalismo puro. Sin logos grandes, solo corte y caída perfecta.",
-      images: [
-        "https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=1000&auto=format&fit=crop"
-      ],
+      description: "Sudadera gris con gráfico divertido y actitud. Un esencial diario.",
+      images: ["/products/product5.jpg"],
       colors: [
-        { name: "Gris Humo", hex: "#555555", available: true },
-        { name: "Negro", hex: "#000000", available: true }
+        { name: "Gris", hex: "#808080", available: true }
       ],
       category: "classic",
       badge: "⭐ Clásico",
+      materials: "Algodón",
+      care: "Lavar a máquina",
+      fit: "Oversized - Talla Única"
+    },
+    {
+      id: 6,
+      name: "Snow Bear Hoodie",
+      price: 45.00,
+      currency: "$",
+      description: "Hoodie blanco puro con detalle minimalista. Elegancia en la simplicidad.",
+      images: ["/products/product6.jpg"],
+      colors: [
+        { name: "Blanco", hex: "#FFFFFF", available: true }
+      ],
+      category: "new",
+      badge: "🆕 Nuevo",
       materials: "Algodón Heavyweight",
       care: "Lavar a máquina",
       fit: "Oversized - Talla Única"
