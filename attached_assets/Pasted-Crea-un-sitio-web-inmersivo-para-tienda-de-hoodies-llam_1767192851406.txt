@@ -1,0 +1,450 @@
+Crea un sitio web inmersivo para tienda de hoodies llamada Hooti - una galería interactiva dedicada a exhibir productos exclusivos con sistema de pedidos vía WhatsApp.
+
+🎨 EFECTO PARALLAX PRINCIPAL
+CONCEPTO CLAVE: El sitio debe tener un fondo negro sólido (#000000 o #0a0a0a) completamente fijo, mientras que todos los elementos del sitio (cards, textos, imágenes, secciones) tienen efecto parallax moviéndose a diferentes velocidades al hacer scroll.
+Implementación del Parallax:
+
+Fondo negro fijo:
+
+background: #000000 o degradado negro muy sutil
+background-attachment: fixed
+Sin movimiento, permanece estático
+
+
+Elementos con parallax (múltiples capas de velocidad):
+
+Capa lenta (velocidad 0.3): Elementos decorativos, búhos de fondo, patrones
+Capa media (velocidad 0.6): Cards de productos, imágenes grandes
+Capa normal (velocidad 1.0): Texto principal, botones, contenido
+Capa rápida (velocidad 1.3): Elementos de UI, header, badges
+
+
+Efecto visual resultante:
+
+Al hacer scroll, los elementos "flotan" sobre el fondo negro
+Sensación de profundidad y capas
+Elementos más cercanos se mueven más rápido
+Elementos de fondo se mueven más lento
+Crear sensación 3D y moderna
+
+
+
+Técnica de implementación:
+javascript// Ejemplo de implementación del parallax
+window.addEventListener('scroll', () => {
+  const scrolled = window.pageYOffset;
+  
+  // Elementos lentos
+  document.querySelectorAll('.parallax-slow').forEach(el => {
+    el.style.transform = `translateY(${scrolled * 0.3}px)`;
+  });
+  
+  // Elementos medios
+  document.querySelectorAll('.parallax-medium').forEach(el => {
+    el.style.transform = `translateY(${scrolled * 0.6}px)`;
+  });
+  
+  // Elementos rápidos
+  document.querySelectorAll('.parallax-fast').forEach(el => {
+    el.style.transform = `translateY(${scrolled * 1.3}px)`;
+  });
+});
+```
+
+---
+
+## **🔧 ARQUITECTURA DE CONTENIDO EDITABLE**
+
+**CRÍTICO:** Todo el contenido debe estar en un archivo de configuración separado (`config.js`) para editar fácilmente sin tocar el código principal.
+
+**Estructura de archivos para Replit:**
+```
+hooti/
+├── index.html
+├── styles.css
+├── script.js
+├── config.js          ← ARCHIVO EDITABLE (textos, imágenes, productos)
+├── README.md          ← Instrucciones de edición
+└── /images/
+    ├── /products/
+    ├── /icons/
+    └── logo.png
+```
+
+---
+
+## **🎯 DISEÑO Y ESTÉTICA**
+
+**Paleta de colores:**
+- Fondo principal: Negro profundo (#0a0a0a)
+- Elementos: Blanco puro (#ffffff), grises (#808080, #404040)
+- Acentos: Naranja/Mostaza (#F6AD55) para CTAs
+- WhatsApp: Verde (#25D366)
+
+**Tipografía distintiva:**
+- Títulos: Fuente bold moderna (Montserrat Bold, Poppins Bold, o Bebas Neue)
+- Cuerpo: Sans-serif limpia (Poppins Regular, DM Sans)
+- NO usar: Inter, Roboto, Arial, System fonts
+
+**Estética general:**
+- Minimalista y elegante
+- Mucho espacio negativo (fondo negro)
+- Elementos flotando sobre el vacío
+- Transiciones suaves
+- Micro-animaciones sutiles
+- Inspiración: Apple, streetwear premium, galería de arte moderna
+
+---
+
+## **📱 HERO SECTION (Con Parallax)**
+
+**Estructura de capas:**
+
+1. **Fondo negro fijo** (no se mueve)
+
+2. **Capa decorativa lenta (parallax 0.2):**
+   - Siluetas de búhos grandes semi-transparentes
+   - Patrones geométricos sutiles
+   - Elementos decorativos de fondo
+
+3. **Capa de imagen media (parallax 0.5):**
+   - Imagen lifestyle de persona con hoodie (con overlay oscuro)
+   - O imagen del producto destacado
+
+4. **Capa de contenido (parallax 1.0):**
+   - Logo del búho (grande y prominente)
+   - Título: "Estilo que habla por ti"
+   - Subtítulo: "Hoodies exclusivos diseñados para quienes no siguen tendencias, las crean"
+   - **Badge destacado:** "TALLA ÚNICA OVERSIZED" en naranja (#F6AD55)
+   - Botón CTA principal: "Ver Colección"
+   - Botón secundario: "Hacer Pedido por WhatsApp" (verde #25D366)
+
+**Animaciones de entrada:**
+- Logo fade-in + scale up
+- Título slide-up con delay
+- Botones fade-in con delay escalonado
+
+---
+
+## **🛍️ CATÁLOGO DE PRODUCTOS (Con Parallax)**
+
+**Grid responsivo:**
+- Desktop: 3-4 columnas
+- Tablet: 2 columnas
+- Mobile: 1 columna
+
+**Cada card de producto (con parallax 0.6):**
+- Imagen del hoodie en fondo transparente o blanco
+- Nombre del modelo
+- **Badge: "TALLA ÚNICA OVERSIZED"** (pequeño, esquina superior)
+- Precio destacado (grande y visible)
+- Badge de categoría (🔥 Best Seller, 💎 Limitado, 🆕 Nuevo, ⭐ Clásico)
+- Efecto hover:
+  - Elevación (lift effect)
+  - Brillo sutil
+  - Escala ligeramente mayor
+  - Sombra suave
+
+**Al hacer clic en una card:**
+- Abre vista detallada del producto (modal full-screen o página dedicada)
+
+---
+
+## **🔍 VISTA DETALLADA DEL PRODUCTO**
+
+**Layout dividido en 2 columnas (responsive en mobile):**
+
+### **Columna Izquierda - Galería:**
+- **Slider de imágenes grande** con múltiples fotos:
+  1. Vista frontal del hoodie
+  2. Vista trasera
+  3. Detalle del diseño/bordado
+  4. Persona usando el hoodie (lifestyle)
+  5. Close-up del material/textura
+
+- Navegación: Flechas + thumbnails clickeables abajo
+- Zoom al hacer hover
+- Indicador de posición (ej: "3 / 5")
+- Transiciones suaves entre imágenes
+
+### **Columna Derecha - Información:**
+
+**Información del producto:**
+- Nombre del modelo (tipografía grande)
+- **Badge destacado:** "TALLA ÚNICA - OVERSIZED FIT" (naranja #F6AD55)
+- Precio (muy destacado, tamaño XL)
+- Descripción completa y atractiva
+- Materiales y características
+- Instrucciones de cuidado
+
+**Selector de Color (único selector necesario):**
+- Círculos grandes con el color real del producto
+- Color seleccionado: borde blanco grueso + checkmark
+- Nombre del color debajo al seleccionar
+- Colores no disponibles: opacidad reducida + "Agotado"
+
+**Información de Talla Oversized:**
+```
+┌─────────────────────────────────────┐
+│   📏 TALLA ÚNICA - OVERSIZED        │
+│                                     │
+│   ✓ Ajuste holgado y cómodo         │
+│   ✓ Unisex                          │
+│   ✓ Se adapta a todas las tallas    │
+│                                     │
+│   Medidas aproximadas:              │
+│   • Pecho: 120cm                    │
+│   • Largo: 75cm                     │
+│   • Hombros: 60cm                   │
+└─────────────────────────────────────┘
+```
+
+**BOTÓN PRINCIPAL (Grande y destacado):**
+```
+┌─────────────────────────────────────┐
+│                                     │
+│   🦉  ME LLEVO ESTE MODELO  💚     │
+│                                     │
+│         $45.00 USD                  │
+│                                     │
+└─────────────────────────────────────┘
+```
+
+- Fondo: Degradado naranja (#F6AD55) o verde WhatsApp (#25D366)
+- Tamaño: Grande y touch-friendly
+- Animación: Pulso suave continuo
+- Sticky en mobile (siempre visible)
+- Efecto hover: Escala + brillo
+
+**Validación antes de enviar:**
+- Si no hay color seleccionado: mostrar alerta "Por favor selecciona un color"
+- Usar animación shake en el selector de color
+
+---
+
+## **💬 FUNCIONALIDAD WHATSAPP**
+
+**Al presionar "ME LLEVO ESTE MODELO":**
+
+1. Validar que color esté seleccionado
+2. Generar mensaje personalizado
+3. Abrir WhatsApp en nueva pestaña
+
+**Formato del mensaje (SIMPLIFICADO - sin talla):**
+```
+¡Hola! Me llevo este modelo:
+
+🦉 Hoodie: [Nombre del Producto]
+🎨 Color: [Color seleccionado]
+💰 Precio: $[Precio] USD
+📏 Talla: ÚNICA OVERSIZED
+
+📸 Ver producto: [URL de la imagen principal]
+
+¿Podrían confirmarme disponibilidad y forma de pago?
+URL de WhatsApp:
+javascriptconst whatsappNumber = "584147170695"; // Sin + ni espacios
+const message = `¡Hola! Me llevo este modelo:\n\n🦉 Hoodie: ${productName}\n🎨 Color: ${selectedColor}\n💰 Precio: $${price} USD\n📏 Talla: ÚNICA OVERSIZED\n\n📸 Ver producto: ${productImage}\n\n¿Podrían confirmarme disponibilidad y forma de pago?`;
+
+const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+window.open(whatsappURL, '_blank');
+```
+
+---
+
+## **🦉 SECCIÓN "SOBRE HOOTI" (Con Parallax)**
+
+**Fondo:** Negro con patrón sutil de búhos (parallax 0.3)
+
+**Contenido:**
+- Historia de la marca
+- Filosofía: "El búho simboliza sabiduría, visión nocturna y estilo urbano"
+- Valores de calidad y exclusividad
+- Compromiso con el cliente
+
+**Layout:** Texto centrado con elementos decorativos flotantes
+
+---
+
+## **📌 ELEMENTOS FLOTANTES**
+
+### **1. Botón Flotante de WhatsApp**
+- Posición: Fixed, esquina inferior derecha
+- Diseño: Círculo verde (#25D366) con ícono de WhatsApp
+- Animación: Pulso continuo suave
+- Tooltip al hover: "¿Necesitas ayuda? Escríbenos"
+- Siempre visible mientras haces scroll
+- Al hacer clic: abre WhatsApp con mensaje general
+
+**Mensaje general:**
+```
+Hola! Me gustaría obtener más información sobre los hoodies disponibles.
+2. Scroll Progress Bar
+
+Barra horizontal en la parte superior
+Color: Naranja (#F6AD55)
+Se llena conforme bajas en la página
+Altura: 3-4px
+Transición suave
+
+3. Header Sticky
+
+Se oculta al hacer scroll hacia abajo
+Aparece al hacer scroll hacia arriba
+Contiene: Logo + Menú + Botón WhatsApp
+Fondo: Negro semi-transparente con blur
+Altura: 70-80px
+
+
+🔚 FOOTER
+Diseño:
+
+Fondo negro con patrón de búhos muy sutil
+Logo del búho en versión monocromática (blanco)
+Layout en grid (3-4 columnas en desktop)
+
+Contenido:
+Columna 1 - Contacto:
+
+Título: "Contacto"
+Botón grande de WhatsApp: +58 414-7170695
+Email (si aplica)
+
+Columna 2 - Enlaces:
+
+Política de cambios
+Términos y condiciones
+Sobre nuestras tallas oversized
+Preguntas frecuentes
+
+Columna 3 - Redes Sociales:
+
+Instagram
+TikTok
+Facebook
+Íconos con efecto hover
+
+Columna 4 - Newsletter:
+
+Título: "Recibe notificaciones de nuevas colecciones"
+Input de email
+Botón "Suscribirse"
+
+Copyright:
+
+Centrado al final
+"© 2024 Hooti. Todos los derechos reservados."
+Logo del búho pequeño
+
+
+⚙️ ARCHIVO DE CONFIGURACIÓN EDITABLE
+Crear archivo config.js con toda la información editable:
+javascriptconst HOOTI_CONFIG = {
+  // Información general
+  siteName: "Hooti",
+  whatsapp: {
+    number: "+584147170695",
+    numberClean: "584147170695"
+  },
+  
+  // Hero
+  hero: {
+    title: "Estilo que habla por ti",
+    subtitle: "Hoodies exclusivos diseñados para quienes no siguen tendencias, las crean",
+    backgroundImage: "URL_DE_LA_IMAGEN"
+  },
+  
+  // Productos (array de objetos)
+  products: [
+    {
+      id: 1,
+      name: "Hoodie Urban Owl Black",
+      price: 45.00,
+      currency: "$",
+      description: "Descripción completa del producto...",
+      images: [
+        "url-imagen-1.jpg",
+        "url-imagen-2.jpg",
+        "url-imagen-3.jpg",
+        "url-imagen-4.jpg"
+      ],
+      colors: [
+        { name: "Negro", hex: "#000000", available: true },
+        { name: "Gris", hex: "#808080", available: true },
+        { name: "Blanco", hex: "#FFFFFF", available: false }
+      ],
+      category: "best-seller",
+      badge: "🔥 Best Seller",
+      materials: "100% Algodón Premium",
+      care: "Lavar a máquina en agua fría",
+      fit: "Oversized - Talla Única"
+    }
+    // ... más productos
+  ],
+  
+  // Información de talla oversized
+  sizing: {
+    title: "TALLA ÚNICA - OVERSIZED FIT",
+    description: "Diseñado para ajuste holgado y máxima comodidad",
+    measurements: {
+      chest: "120cm",
+      length: "75cm",
+      shoulder: "60cm",
+      sleeve: "65cm"
+    },
+    benefits: [
+      "Ajuste holgado y cómodo",
+      "Unisex",
+      "Se adapta a todas las tallas",
+      "Perfecto para layering"
+    ]
+  },
+  
+  // Redes sociales
+  social: {
+    instagram: "https://instagram.com/hooti",
+    tiktok: "https://tiktok.com/@hooti",
+    facebook: "https://facebook.com/hooti"
+  }
+};
+
+📱 RESPONSIVE DESIGN
+Mobile (< 768px):
+
+Parallax simplificado o desactivado (mejor performance)
+Grid de 1 columna
+Vista detallada del producto: columnas apiladas
+Header más compacto
+Botones más grandes (touch-friendly)
+Slider de imágenes con swipe
+Badge "TALLA ÚNICA OVERSIZED" más pequeño
+
+Tablet (768px - 1024px):
+
+Grid de 2 columnas
+Parallax reducido
+Espaciado ajustado
+
+Desktop (> 1024px):
+
+Grid de 3-4 columnas
+Parallax completo
+Hover effects activos
+Espaciado generoso
+
+
+🚀 OPTIMIZACIÓN PARA REPLIT
+Performance:
+
+Lazy loading de imágenes
+CSS minificado
+JavaScript optimizado
+Imágenes comprimidas (WebP preferible)
+Parallax usando transform (GPU-accelerated)
+
+Compatibilidad:
+
+Cross-browser (Chrome, Firefox, Safari, Edge)
+Fallbacks para navegadores antiguos
+Graceful degradation del parallax en móviles
