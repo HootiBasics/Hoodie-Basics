@@ -107,6 +107,38 @@ export const HOOTI_CONFIG: SiteConfig = {
       materials: "Algodón Heavyweight",
       care: "Lavar a máquina",
       fit: "Estándar"
+    },
+    {
+      id: 7,
+      name: "Night Crawler Joggers",
+      price: 150.00,
+      currency: "$",
+      description: "Pantalones cargo con múltiples bolsillos diseñados para la movilidad urbana.",
+      images: ["/products/product2.jpg", "/products/product2.jpg"],
+      colors: [
+        { name: "Negro", hex: "#000000", available: true }
+      ],
+      category: "limited",
+      badge: "LIMITED",
+      materials: "Poliéster Técnico",
+      care: "Lavar a máquina",
+      fit: "Relajado"
+    },
+    {
+      id: 8,
+      name: "Eclipse Bomber",
+      price: 280.00,
+      currency: "$",
+      description: "Chaqueta bomber reversible con interior acolchado para mayor calidez.",
+      images: ["/products/product4.jpg", "/products/product4.jpg"],
+      colors: [
+        { name: "Marrón", hex: "#8B4513", available: true }
+      ],
+      category: "classic",
+      badge: "NEW",
+      materials: "Nylon Balístico",
+      care: "Limpieza en seco",
+      fit: "Boxy"
     }
   ],
   social: {
