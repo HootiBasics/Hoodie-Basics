@@ -26,19 +26,20 @@ export function HeroSection() {
         style={{ y: textY, opacity }}
         className="relative z-10 container mx-auto px-4 text-center flex flex-col items-center"
       >
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="inline-block px-4 py-1.5 mb-6 border border-primary/50 text-primary text-xs font-bold tracking-[0.2em] uppercase rounded-full bg-primary/5 backdrop-blur-sm"
-        >
-          {HOOTI_CONFIG.hero.badge}
-        </motion.div>
+        {HOOTI_CONFIG.hero.badge && (
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="inline-block px-4 py-1.5 mb-6 border border-primary/50 text-primary text-xs font-bold tracking-[0.2em] uppercase rounded-full bg-primary/5 backdrop-blur-sm"
+          >
+            {HOOTI_CONFIG.hero.badge}
+          </motion.div>
+        )}
 
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-black font-display tracking-tighter leading-[0.9] mb-6 text-white mix-blend-normal">
-          STREET<br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-600">WEAR</span><br />
-          EVO
+          HOOTI<br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-600">BASICS</span>
         </h1>
 
         <motion.p 

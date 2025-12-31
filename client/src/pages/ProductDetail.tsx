@@ -2,8 +2,7 @@ import { useState } from "react";
 import { useRoute, useLocation } from "wouter";
 import { HOOTI_CONFIG } from "@/lib/config";
 import useEmblaCarousel from "embla-carousel-react";
-import { MessageCircle, ArrowLeft, Ruler, Truck } from "lucide-react";
-import { motion } from "framer-motion";
+import { MessageCircle, ArrowLeft, Truck } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function ProductDetail() {
@@ -12,9 +11,8 @@ export default function ProductDetail() {
   const id = params ? parseInt(params.id) : null;
   const product = HOOTI_CONFIG.products.find(p => p.id === id);
 
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef] = useEmblaCarousel({ loop: true });
   const [selectedColor, setSelectedColor] = useState(product?.colors[0]);
-  const [selectedSize, setSelectedSize] = useState<string | null>(null);
 
   if (!product) return <div className="min-h-screen flex items-center justify-center">Product not found</div>;
 
@@ -24,10 +22,8 @@ export default function ProductDetail() {
     maximumFractionDigits: 0
   }).format(product.price);
 
-  const sizes = ["S", "M", "L", "XL"];
-
   const handleWhatsAppClick = () => {
-    const message = `Hola! Me llevo este modelo: ${product.name} - Color: ${selectedColor?.name || 'N/A'} - Talla: ${selectedSize || 'N/A'}`;
+    const message = `¡Hola! Me llevo este modelo:\n\n🦉 Hoodie: ${product.name}\n🎨 Color: ${selectedColor?.name || 'N/A'}\n💰 Precio: ${formattedPrice}\n\n¿Podrían confirmarme disponibilidad y forma de pago?`;
     const url = `https://wa.me/${HOOTI_CONFIG.whatsapp.numberClean}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
@@ -61,14 +57,10 @@ export default function ProductDetail() {
             </div>
           </div>
           
-          <div className="grid grid-cols-2 gap-4 text-xs font-mono text-muted-foreground">
+          <div className="grid grid-cols-1 gap-4 text-xs font-mono text-muted-foreground">
             <div className="p-4 border border-white/10 bg-white/5 flex items-center gap-3">
               <Truck className="w-5 h-5 text-primary" />
-              <span>Envío Gratis {">"} $200k</span>
-            </div>
-            <div className="p-4 border border-white/10 bg-white/5 flex items-center gap-3">
-              <Ruler className="w-5 h-5 text-primary" />
-              <span>Guía de Tallas</span>
+              <span>Envío Nacional Disponible</span>
             </div>
           </div>
         </div>
@@ -108,30 +100,6 @@ export default function ProductDetail() {
               </div>
             </div>
 
-            {/* Size Selection */}
-            <div>
-              <div className="flex justify-between items-center mb-4">
-                <h3 className="text-sm font-bold uppercase tracking-wider text-white">Talla</h3>
-                <span className="text-xs text-primary underline cursor-pointer">Ver medidas</span>
-              </div>
-              <div className="grid grid-cols-4 gap-4">
-                {sizes.map((size) => (
-                  <button
-                    key={size}
-                    onClick={() => setSelectedSize(size)}
-                    className={cn(
-                      "py-4 border text-sm font-bold transition-all",
-                      selectedSize === size 
-                        ? "bg-white text-black border-white" 
-                        : "bg-transparent text-white border-white/20 hover:border-primary/50"
-                    )}
-                  >
-                    {size}
-                  </button>
-                ))}
-              </div>
-            </div>
-
             {/* Specs */}
             <div className="border-t border-white/10 pt-6 space-y-2 text-sm text-muted-foreground font-mono">
               <div className="flex justify-between"><span>Material</span><span className="text-white">{product.materials}</span></div>
@@ -144,12 +112,11 @@ export default function ProductDetail() {
             <button
               onClick={handleWhatsAppClick}
               className={cn(
-                "w-full py-5 bg-[#25D366] text-white font-black uppercase tracking-widest text-lg flex items-center justify-center gap-3 transition-transform hover:-translate-y-1 hover:shadow-[0_10px_40px_-10px_rgba(37,211,102,0.5)] rounded-lg",
-                !selectedSize && "opacity-80 cursor-not-allowed hover:translate-y-0"
+                "w-full py-5 bg-[#25D366] text-white font-black uppercase tracking-widest text-lg flex items-center justify-center gap-3 transition-transform hover:-translate-y-1 hover:shadow-[0_10px_40px_-10px_rgba(37,211,102,0.5)] rounded-lg"
               )}
             >
               <MessageCircle className="w-6 h-6 fill-white" />
-              {selectedSize ? "Me llevo este modelo" : "Selecciona una talla"}
+              Me llevo este modelo
             </button>
           </div>
         </div>

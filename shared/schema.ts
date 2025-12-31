@@ -50,17 +50,6 @@ export interface SiteConfig {
     badge: string;
   };
   products: Product[];
-  sizing: {
-    title: string;
-    description: string;
-    measurements: {
-      chest: string;
-      length: string;
-      shoulder: string;
-      sleeve: string;
-    };
-    benefits: string[];
-  };
   social: {
     instagram: string;
     tiktok: string;

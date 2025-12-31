@@ -9,7 +9,7 @@ export const HOOTI_CONFIG: SiteConfig = {
   hero: {
     title: "Hooti Basics",
     subtitle: "Hoodies exclusivos diseñados para quienes no siguen tendencias, las crean",
-    badge: "TALLA ÚNICA OVERSIZED"
+    badge: ""
   },
   products: [
     {
@@ -26,7 +26,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       badge: "⭐ Clásico",
       materials: "Algodón Premium",
       care: "Lavar a máquina",
-      fit: "Oversized - Talla Única"
+      fit: "Estándar"
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       badge: "💎 Limitado",
       materials: "Algodón Heavyweight",
       care: "Lavar a máquina",
-      fit: "Oversized - Talla Única"
+      fit: "Estándar"
     },
     {
       id: 3,
@@ -58,7 +58,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       badge: "🔥 Best Seller",
       materials: "Algodón Premium",
       care: "Lavar a máquina",
-      fit: "Oversized - Talla Única"
+      fit: "Estándar"
     },
     {
       id: 4,
@@ -74,7 +74,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       badge: "🆕 Nuevo",
       materials: "Algodón Orgánico",
       care: "Lavar a máquina",
-      fit: "Oversized - Talla Única"
+      fit: "Estándar"
     },
     {
       id: 5,
@@ -90,7 +90,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       badge: "⭐ Clásico",
       materials: "Algodón",
       care: "Lavar a máquina",
-      fit: "Oversized - Talla Única"
+      fit: "Estándar"
     },
     {
       id: 6,
@@ -106,25 +106,9 @@ export const HOOTI_CONFIG: SiteConfig = {
       badge: "🆕 Nuevo",
       materials: "Algodón Heavyweight",
       care: "Lavar a máquina",
-      fit: "Oversized - Talla Única"
+      fit: "Estándar"
     }
   ],
-  sizing: {
-    title: "TALLA ÚNICA - OVERSIZED FIT",
-    description: "Diseñado para ajuste holgado y máxima comodidad",
-    measurements: {
-      chest: "120cm",
-      length: "75cm",
-      shoulder: "60cm",
-      sleeve: "65cm"
-    },
-    benefits: [
-      "Ajuste holgado y cómodo",
-      "Unisex",
-      "Se adapta a todas las tallas",
-      "Perfecto para layering"
-    ]
-  },
   social: {
     instagram: "https://instagram.com/hooti",
     tiktok: "https://tiktok.com/@hooti",
