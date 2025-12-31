@@ -1,6 +1,6 @@
 import { HeroSection } from "@/components/HeroSection";
 import { ProductCard } from "@/components/ProductCard";
-import { HOOTI_CONFIG } from "@/lib/config";
+import { HOOTI_CONFIG } from "@shared/config";
 import { motion } from "framer-motion";
 import {
   Carousel,

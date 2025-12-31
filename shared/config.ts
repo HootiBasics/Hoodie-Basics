@@ -18,7 +18,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       price: 45.00,
       currency: "$",
       description: "Sudadera clásica con diseño Giant's Football. Comodidad y estilo deportivo.",
-      images: ["/products/product1.jpg", "/products/product1.jpg"],
+      images: ["/products/Giantes 1.jpeg", "/products/Giantes 2.jpeg"],
       colors: [
         { name: "Navy", hex: "#1a1a2e", available: true }
       ],
@@ -34,7 +34,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       price: 48.00,
       currency: "$",
       description: "Diseño audaz con gráficos de terror urbano. Para destacar en la multitud.",
-      images: ["/products/product2.jpg", "/products/product2.jpg"],
+      images: ["/products/Freaks 1.jpeg", "/products/Freaks 2.jpeg"],
       colors: [
         { name: "Negro", hex: "#000000", available: true }
       ],
@@ -50,7 +50,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       price: 50.00,
       currency: "$",
       description: "Homenaje al estilo hockey. Diseño minimalista y robusto.",
-      images: ["/products/product3.jpg", "/products/product3.jpg"],
+      images: ["/products/Avalanche 1.jpeg", "/products/Avalanche 2.jpeg"],
       colors: [
         { name: "Gris Carbón", hex: "#333333", available: true }
       ],
@@ -66,7 +66,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       price: 45.00,
       currency: "$",
       description: "Gráficos detallados con temática zombi. Estilo rebelde y auténtico.",
-      images: ["/products/product4.jpg", "/products/product4.jpg"],
+      images: ["/products/Alan 1.jpeg", "/products/Alan 2.jpeg"],
       colors: [
         { name: "Negro", hex: "#000000", available: true }
       ],
@@ -82,7 +82,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       price: 42.00,
       currency: "$",
       description: "Sudadera gris con gráfico divertido y actitud. Un esencial diario.",
-      images: ["/products/product5.jpg", "/products/product5.jpg"],
+      images: ["/products/I got 1.jpeg", "/products/I got 2.jpeg"],
       colors: [
         { name: "Gris", hex: "#808080", available: true }
       ],
@@ -98,7 +98,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       price: 45.00,
       currency: "$",
       description: "Hoodie blanco puro con detalle minimalista. Elegancia en la simplicidad.",
-      images: ["/products/product6.jpg", "/products/product6.jpg"],
+      images: ["/products/Blanco.jpeg", "/products/Blanco.jpeg"],
       colors: [
         { name: "Blanco", hex: "#FFFFFF", available: true }
       ],
@@ -114,7 +114,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       price: 150.00,
       currency: "$",
       description: "Pantalones cargo con múltiples bolsillos diseñados para la movilidad urbana.",
-      images: ["/products/product2.jpg", "/products/product2.jpg"],
+      images: ["/products/Alan 1.jpeg", "/products/Alan 2.jpeg"],
       colors: [
         { name: "Negro", hex: "#000000", available: true }
       ],
@@ -130,7 +130,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       price: 280.00,
       currency: "$",
       description: "Chaqueta bomber reversible con interior acolchado para mayor calidez.",
-      images: ["/products/product4.jpg", "/products/product4.jpg"],
+      images: ["/products/Freaks 1.jpeg", "/products/Freaks 2.jpeg"],
       colors: [
         { name: "Marrón", hex: "#8B4513", available: true }
       ],
