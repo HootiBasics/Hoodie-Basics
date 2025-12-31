@@ -1,7 +1,7 @@
 import { SiteConfig } from "./schema";
 
 export const HOOTI_CONFIG: SiteConfig = {
-  siteName: "Hooti",
+  siteName: "Hooti Basics",
   whatsapp: {
     number: "+584147170695",
     numberClean: "584147170695"
