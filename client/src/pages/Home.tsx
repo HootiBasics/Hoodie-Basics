@@ -2,6 +2,13 @@ import { HeroSection } from "@/components/HeroSection";
 import { ProductCard } from "@/components/ProductCard";
 import { HOOTI_CONFIG } from "@/lib/config";
 import { motion } from "framer-motion";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Home() {
   return (
@@ -22,11 +29,25 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {HOOTI_CONFIG.products.map((product, idx) => (
-            <ProductCard key={product.id} product={product} index={idx} />
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full"
+        >
+          <CarouselContent className="-ml-4">
+            {HOOTI_CONFIG.products.map((product, idx) => (
+              <CarouselItem key={product.id} className="pl-4 basis-full md:basis-1/2 lg:basis-1/4">
+                <ProductCard product={product} index={idx} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="flex justify-end gap-2 mt-8">
+            <CarouselPrevious className="static translate-y-0" />
+            <CarouselNext className="static translate-y-0" />
+          </div>
+        </Carousel>
       </section>
 
       {/* Values/Marquee Section */}
@@ -44,7 +65,7 @@ export default function Home() {
         </div>
       </div>
       
-      {/* Sizing/Info Grid */}
+      {/* Footer / Contact Section Info */}
       <section className="py-32 container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -63,32 +84,26 @@ export default function Home() {
 
           <div className="space-y-8">
             <h3 className="text-3xl font-black font-display uppercase text-primary">
-              {HOOTI_CONFIG.sizing.title}
+              HOOTI BASICS
             </h3>
             <p className="text-muted-foreground text-lg">
-              {HOOTI_CONFIG.sizing.description}
+              Nuestros hoodies están diseñados para el día a día sin sacrificar el estilo. Calidad que se siente, diseño que se nota.
             </p>
             
-            <div className="grid grid-cols-2 gap-6">
-              {Object.entries(HOOTI_CONFIG.sizing.measurements).map(([key, value]) => (
-                <div key={key} className="p-4 border border-white/10 hover:border-primary/30 transition-colors bg-white/5">
-                  <h4 className="font-bold uppercase text-white mb-2">{key}</h4>
-                  <p className="text-sm text-muted-foreground">{value}</p>
-                </div>
-              ))}
+            <div className="grid grid-cols-1 gap-6">
+              <div className="p-4 border border-white/10 hover:border-primary/30 transition-colors bg-white/5">
+                <h4 className="font-bold uppercase text-white mb-2">Materiales</h4>
+                <p className="text-sm text-muted-foreground">Algodón premium de alto gramaje para máxima durabilidad.</p>
+              </div>
+              <div className="p-4 border border-white/10 hover:border-primary/30 transition-colors bg-white/5">
+                <h4 className="font-bold uppercase text-white mb-2">Corte</h4>
+                <p className="text-sm text-muted-foreground">Diseño minimalista y moderno que se adapta a tu estilo.</p>
+              </div>
             </div>
-
-            <ul className="space-y-4 pt-4">
-              {HOOTI_CONFIG.sizing.benefits.map((benefit, i) => (
-                <li key={i} className="flex items-center gap-3 text-white font-medium">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  {benefit}
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       </section>
     </div>
   );
 }
+
