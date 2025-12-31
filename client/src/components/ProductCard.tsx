@@ -60,7 +60,6 @@ export function ProductCard({ product, index }: ProductCardProps) {
           
           <div className="mt-auto flex items-center justify-between pt-4 border-t border-white/10">
             <span className="text-lg font-mono font-medium text-white">{formattedPrice}</span>
-            <span className="text-xs text-muted-foreground uppercase tracking-wider">{product.colors.length} Colores</span>
           </div>
         </div>
       </motion.div>
