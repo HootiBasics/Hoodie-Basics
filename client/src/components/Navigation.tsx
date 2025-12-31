@@ -35,8 +35,15 @@ export function Navigation() {
         )}
       >
         <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-black font-display tracking-tighter hover:text-primary transition-colors cursor-pointer">
-            {HOOTI_CONFIG.siteName}
+          <Link href="/" className="flex items-center gap-2 group cursor-pointer">
+            <img 
+              src="/logo.heic" 
+              alt={HOOTI_CONFIG.siteName} 
+              className="h-10 w-auto brightness-0 invert transition-transform group-hover:scale-110" 
+            />
+            <span className="text-2xl font-black font-display tracking-tighter hover:text-primary transition-colors">
+              {HOOTI_CONFIG.siteName}
+            </span>
           </Link>
 
           {/* Desktop Menu */}
@@ -80,7 +87,10 @@ export function Navigation() {
             className="fixed inset-0 z-[60] bg-background border-l border-white/10 flex flex-col"
           >
             <div className="p-6 flex justify-between items-center border-b border-white/10">
-              <span className="text-2xl font-black font-display">{HOOTI_CONFIG.siteName}</span>
+              <div className="flex items-center gap-2">
+                <img src="/logo.heic" alt={HOOTI_CONFIG.siteName} className="h-8 w-auto brightness-0 invert" />
+                <span className="text-2xl font-black font-display">{HOOTI_CONFIG.siteName}</span>
+              </div>
               <button onClick={() => setIsMobileMenuOpen(false)}>
                 <X className="w-8 h-8 text-muted-foreground hover:text-primary transition-colors" />
               </button>
