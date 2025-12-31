@@ -1,5 +1,5 @@
 import { useRoute, useLocation } from "wouter";
-import { HOOTI_CONFIG } from "@/lib/config";
+import { HOOTI_CONFIG } from "@shared/config";
 import useEmblaCarousel from "embla-carousel-react";
 import { MessageCircle, ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
