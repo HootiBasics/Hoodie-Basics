@@ -26,13 +26,6 @@ export function ProductCard({ product, index }: ProductCardProps) {
         transition={{ duration: 0.5, delay: index * 0.1 }}
         className="relative bg-card rounded-none overflow-hidden border border-white/5 hover:border-primary/50 transition-colors duration-300 h-full flex flex-col"
       >
-        {/* Badge */}
-        {product.badge && (
-          <div className="absolute top-4 left-4 z-20 px-3 py-1 bg-primary text-black text-xs font-bold uppercase tracking-wider">
-            {product.badge}
-          </div>
-        )}
-
         {/* Image Container */}
         <div className="relative aspect-[4/5] overflow-hidden bg-white/5">
           <img 

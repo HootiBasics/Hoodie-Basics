@@ -23,7 +23,7 @@ export const HOOTI_CONFIG: SiteConfig = {
         { name: "Navy", hex: "#1a1a2e", available: true }
       ],
       category: "classic",
-      badge: "⭐ Clásico",
+      badge: "",
       materials: "Algodón Premium",
       care: "Lavar a máquina",
       fit: "Estándar"
@@ -39,7 +39,7 @@ export const HOOTI_CONFIG: SiteConfig = {
         { name: "Negro", hex: "#000000", available: true }
       ],
       category: "limited",
-      badge: "💎 Limitado",
+      badge: "",
       materials: "Algodón Heavyweight",
       care: "Lavar a máquina",
       fit: "Estándar"
@@ -55,7 +55,7 @@ export const HOOTI_CONFIG: SiteConfig = {
         { name: "Gris Carbón", hex: "#333333", available: true }
       ],
       category: "best-seller",
-      badge: "🔥 Best Seller",
+      badge: "",
       materials: "Algodón Premium",
       care: "Lavar a máquina",
       fit: "Estándar"
@@ -71,7 +71,7 @@ export const HOOTI_CONFIG: SiteConfig = {
         { name: "Negro", hex: "#000000", available: true }
       ],
       category: "new",
-      badge: "🆕 Nuevo",
+      badge: "",
       materials: "Algodón Orgánico",
       care: "Lavar a máquina",
       fit: "Estándar"
@@ -87,7 +87,7 @@ export const HOOTI_CONFIG: SiteConfig = {
         { name: "Gris", hex: "#808080", available: true }
       ],
       category: "classic",
-      badge: "⭐ Clásico",
+      badge: "",
       materials: "Algodón",
       care: "Lavar a máquina",
       fit: "Estándar"
@@ -103,7 +103,7 @@ export const HOOTI_CONFIG: SiteConfig = {
         { name: "Blanco", hex: "#FFFFFF", available: true }
       ],
       category: "new",
-      badge: "🆕 Nuevo",
+      badge: "",
       materials: "Algodón Heavyweight",
       care: "Lavar a máquina",
       fit: "Estándar"
@@ -119,7 +119,7 @@ export const HOOTI_CONFIG: SiteConfig = {
         { name: "Negro", hex: "#000000", available: true }
       ],
       category: "limited",
-      badge: "LIMITED",
+      badge: "",
       materials: "Poliéster Técnico",
       care: "Lavar a máquina",
       fit: "Relajado"
@@ -135,7 +135,7 @@ export const HOOTI_CONFIG: SiteConfig = {
         { name: "Marrón", hex: "#8B4513", available: true }
       ],
       category: "classic",
-      badge: "NEW",
+      badge: "",
       materials: "Nylon Balístico",
       care: "Limpieza en seco",
       fit: "Boxy"
