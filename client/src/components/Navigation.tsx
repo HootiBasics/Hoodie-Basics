@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { ShoppingBag, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HOOTI_CONFIG } from "@/lib/config";
 import { cn } from "@/lib/utils";
@@ -60,11 +60,6 @@ export function Navigation() {
           </div>
 
           <div className="flex items-center gap-4">
-            <button className="relative group p-2 hover:bg-white/5 rounded-full transition-colors">
-              <ShoppingBag className="w-5 h-5 text-foreground group-hover:text-primary transition-colors" />
-              <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full" />
-            </button>
-
             {/* Mobile Toggle */}
             <button 
               className="md:hidden p-2 text-foreground"
