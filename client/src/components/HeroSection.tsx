@@ -15,6 +15,16 @@ export function HeroSection() {
 
   return (
     <div ref={ref} className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-[#0a0a0a]">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/hero-main.jpg" 
+          alt="Hero Background"
+          className="w-full h-full object-cover grayscale brightness-50"
+        />
+        <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
+      </div>
+      
       {/* Background Pattern */}
       <div className="absolute inset-0 z-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1618331835717-801e976710b2?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay" />
       

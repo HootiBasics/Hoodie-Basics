@@ -16,9 +16,9 @@ export const HOOTI_CONFIG: SiteConfig = {
       id: 1,
       name: "Giant's Football Sweatshirt",
       price: 45.00,
-      currency: "$",
+      currency: "USD",
       description: "Sudadera clásica con diseño Giant's Football. Comodidad y estilo deportivo.",
-      images: ["/products/Giantes 1.jpeg", "/products/Giantes 2.jpeg"],
+      images: ["/products/giants-1.jpg", "/products/giants-2.jpg"],
       colors: [
         { name: "Navy", hex: "#1a1a2e", available: true }
       ],
@@ -32,9 +32,9 @@ export const HOOTI_CONFIG: SiteConfig = {
       id: 2,
       name: "Freaks Night Out",
       price: 48.00,
-      currency: "$",
+      currency: "USD",
       description: "Diseño audaz con gráficos de terror urbano. Para destacar en la multitud.",
-      images: ["/products/Freaks 1.jpeg", "/products/Freaks 2.jpeg"],
+      images: ["/products/freaks-1.jpeg", "/products/freaks-2.jpeg"],
       colors: [
         { name: "Negro", hex: "#000000", available: true }
       ],
@@ -48,9 +48,9 @@ export const HOOTI_CONFIG: SiteConfig = {
       id: 3,
       name: "Colorado Avalanche Hoodie",
       price: 50.00,
-      currency: "$",
+      currency: "USD",
       description: "Homenaje al estilo hockey. Diseño minimalista y robusto.",
-      images: ["/products/Avalanche 1.jpeg", "/products/Avalanche 2.jpeg"],
+      images: ["/products/avalanche-1.jpeg", "/products/avalanche-2.jpeg", "/products/avalanche-3.jpg"],
       colors: [
         { name: "Gris Carbón", hex: "#333333", available: true }
       ],
@@ -64,9 +64,9 @@ export const HOOTI_CONFIG: SiteConfig = {
       id: 4,
       name: "The Dead Wake Up",
       price: 45.00,
-      currency: "$",
+      currency: "USD",
       description: "Gráficos detallados con temática zombi. Estilo rebelde y auténtico.",
-      images: ["/products/Alan 1.jpeg", "/products/Alan 2.jpeg"],
+      images: ["/products/dead-1.jpeg", "/products/dead-2.jpeg"],
       colors: [
         { name: "Negro", hex: "#000000", available: true }
       ],
@@ -80,9 +80,9 @@ export const HOOTI_CONFIG: SiteConfig = {
       id: 5,
       name: "I Got That Dog In Me",
       price: 42.00,
-      currency: "$",
+      currency: "USD",
       description: "Sudadera gris con gráfico divertido y actitud. Un esencial diario.",
-      images: ["/products/I got 1.jpeg", "/products/I got 2.jpeg"],
+      images: ["/products/dog-1.jpeg", "/products/dog-2.jpeg", "/products/dog-3.jpeg"],
       colors: [
         { name: "Gris", hex: "#808080", available: true }
       ],
@@ -96,9 +96,9 @@ export const HOOTI_CONFIG: SiteConfig = {
       id: 6,
       name: "Snow Bear Hoodie",
       price: 45.00,
-      currency: "$",
+      currency: "USD",
       description: "Hoodie blanco puro con detalle minimalista. Elegancia en la simplicidad.",
-      images: ["/products/Blanco.jpeg", "/products/Blanco.jpeg"],
+      images: ["/products/snow-bear.jpg"],
       colors: [
         { name: "Blanco", hex: "#FFFFFF", available: true }
       ],
@@ -112,9 +112,9 @@ export const HOOTI_CONFIG: SiteConfig = {
       id: 7,
       name: "Night Crawler Joggers",
       price: 150.00,
-      currency: "$",
+      currency: "USD",
       description: "Pantalones cargo con múltiples bolsillos diseñados para la movilidad urbana.",
-      images: ["/products/Alan 1.jpeg", "/products/Alan 2.jpeg"],
+      images: ["/products/little-1.jpg", "/products/little-2.jpg"],
       colors: [
         { name: "Negro", hex: "#000000", available: true }
       ],
@@ -128,13 +128,45 @@ export const HOOTI_CONFIG: SiteConfig = {
       id: 8,
       name: "Eclipse Bomber",
       price: 280.00,
-      currency: "$",
+      currency: "USD",
       description: "Chaqueta bomber reversible con interior acolchado para mayor calidez.",
-      images: ["/products/Freaks 1.jpeg", "/products/Freaks 2.jpeg"],
+      images: ["/products/blue-1.jpeg", "/products/blue-2.jpeg"],
       colors: [
-        { name: "Marrón", hex: "#8B4513", available: true }
+        { name: "Azul", hex: "#4169E1", available: true }
       ],
-      category: "classic",
+      category: "new",
+      badge: "",
+      materials: "Nylon Balístico",
+      care: "Limpieza en seco",
+      fit: "Boxy"
+    },
+    {
+      id: 9,
+      name: "grizzlies",
+      price: 280.00,
+      currency: "USD",
+      description: "Chaqueta bomber reversible con interior acolchado para mayor calidez.",
+      images: ["/products/grizzlies.jpeg", "/products/hero.jpeg"],
+      colors: [
+        { name: "Azul", hex: "#4169E1", available: true }
+      ],
+      category: "new",
+      badge: "",
+      materials: "Nylon Balístico",
+      care: "Limpieza en seco",
+      fit: "Boxy"
+    },
+    {
+      id: 10,
+      name: "hockey",
+      price: 280.00,
+      currency: "USD",
+      description: "Chaqueta bomber reversible con interior acolchado para mayor calidez.",
+      images: ["/products/hockey-1.jpeg", "/products/hockey-2.jpeg"],
+      colors: [
+        { name: "Azul", hex: "#4169E1", available: true }
+      ],
+      category: "new",
       badge: "",
       materials: "Nylon Balístico",
       care: "Limpieza en seco",
