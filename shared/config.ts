@@ -9,7 +9,7 @@ export const HOOTI_CONFIG: SiteConfig = {
   hero: {
     title: "Hooti Basics",
     subtitle: "Hoodies exclusivos diseñados para quienes no siguen tendencias, las crean",
-    badge: "NUEVA COLECCIÓN 2026"
+    badge: ""
   },
   products: [
     {
