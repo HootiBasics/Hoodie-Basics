@@ -25,21 +25,19 @@ export function Footer() {
           {/* Links */}
           <div className="md:col-span-6 grid grid-cols-2 gap-8">
             <div>
-              <h4 className="font-bold mb-6 text-lg uppercase tracking-wider">Explorar</h4>
-              <ul className="space-y-4 text-muted-foreground">
-                <li><a href="#collection" className="hover:text-primary transition-colors">Colección</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Best Sellers</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Accesorios</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Gift Cards</a></li>
-              </ul>
-            </div>
-            <div>
               <h4 className="font-bold mb-6 text-lg uppercase tracking-wider">Ayuda</h4>
               <ul className="space-y-4 text-muted-foreground">
+                
                 <li><a href="#" className="hover:text-primary transition-colors">Envíos</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Devoluciones</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Tallas</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Contacto</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold mb-6 text-lg uppercase tracking-wider">Explorar</h4>
+              <ul className="space-y-4 text-muted-foreground">
+                <li><a href="#collection" className="hover:text-primary transition-colors">Colección</a></li>
               </ul>
             </div>
           </div>
