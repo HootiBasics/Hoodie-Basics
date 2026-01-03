@@ -9,7 +9,7 @@ export const HOOTI_CONFIG: SiteConfig = {
   hero: {
     title: "Hooti Basics",
     subtitle: "Hoodies exclusivos diseñados para quienes no siguen tendencias, las crean",
-    badge: ""
+    badge: "NUEVA COLECCIÓN 2026"
   },
   products: [
     {
@@ -22,7 +22,6 @@ export const HOOTI_CONFIG: SiteConfig = {
       colors: [
         { name: "Navy", hex: "#1a1a2e", available: true }
       ],
-      sizes: ["S", "M", "L", "XL"],
       category: "classic",
       badge: "⭐ Clásico",
       materials: "Algodón Premium",
@@ -39,7 +38,6 @@ export const HOOTI_CONFIG: SiteConfig = {
       colors: [
         { name: "Negro", hex: "#000000", available: true }
       ],
-      sizes: ["M", "L", "XL"],
       category: "limited",
       badge: "💎 Limitado",
       materials: "Algodón Heavyweight",
@@ -56,7 +54,6 @@ export const HOOTI_CONFIG: SiteConfig = {
       colors: [
         { name: "Gris Carbón", hex: "#333333", available: true }
       ],
-      sizes: ["S", "M", "L", "XL", "XXL"],
       category: "best-seller",
       badge: "🔥 Best Seller",
       materials: "Algodón Premium",
@@ -73,7 +70,6 @@ export const HOOTI_CONFIG: SiteConfig = {
       colors: [
         { name: "Negro", hex: "#000000", available: true }
       ],
-      sizes: ["S", "M", "L", "XL"],
       category: "new",
       badge: "🆕 Nuevo",
       materials: "Algodón Orgánico",
@@ -90,7 +86,6 @@ export const HOOTI_CONFIG: SiteConfig = {
       colors: [
         { name: "Gris", hex: "#808080", available: true }
       ],
-      sizes: ["M", "L", "XL"],
       category: "classic",
       badge: "⭐ Clásico",
       materials: "Algodón",
@@ -107,7 +102,6 @@ export const HOOTI_CONFIG: SiteConfig = {
       colors: [
         { name: "Blanco", hex: "#FFFFFF", available: true }
       ],
-      sizes: ["S", "M", "L"],
       category: "new",
       badge: "🆕 Nuevo",
       materials: "Algodón Heavyweight",
@@ -124,7 +118,6 @@ export const HOOTI_CONFIG: SiteConfig = {
       colors: [
         { name: "Negro", hex: "#000000", available: true }
       ],
-      sizes: ["30", "32", "34", "36"],
       category: "limited",
       badge: "💎 Limitado",
       materials: "Poliéster Técnico",
@@ -141,7 +134,6 @@ export const HOOTI_CONFIG: SiteConfig = {
       colors: [
         { name: "Azul", hex: "#4169E1", available: true }
       ],
-      sizes: ["S", "M", "L", "XL"],
       category: "new",
       badge: "🆕 Nuevo",
       materials: "Nylon Balístico",
@@ -158,7 +150,6 @@ export const HOOTI_CONFIG: SiteConfig = {
       colors: [
         { name: "Azul", hex: "#4169E1", available: true }
       ],
-      sizes: ["S", "M", "L", "XL"],
       category: "new",
       badge: "🆕 Nuevo",
       materials: "Nylon Balístico",
@@ -175,7 +166,6 @@ export const HOOTI_CONFIG: SiteConfig = {
       colors: [
         { name: "Azul", hex: "#4169E1", available: true }
       ],
-      sizes: ["S", "M", "L", "XL"],
       category: "new",
       badge: "🆕 Nuevo",
       materials: "Nylon Balístico",

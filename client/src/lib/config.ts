@@ -9,7 +9,7 @@ export const HOOTI_CONFIG: SiteConfig = {
   hero: {
     title: "STREETWEAR\nEVOLUTION",
     subtitle: "Diseños exclusivos para quienes marcan su propio ritmo. Calidad premium, estilo inigualable.",
-    badge: "NUEVA COLECCIÓN 2026",
+    badge: "NUEVA COLECCIÓN 2025",
   },
   products: [
     {

@@ -3,14 +3,13 @@ import { HOOTI_CONFIG } from "@shared/config";
 import useEmblaCarousel from "embla-carousel-react";
 import { MessageCircle, ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useCallback, useState } from "react";
+import { useCallback } from "react";
 
 export default function ProductDetail() {
   const [, params] = useRoute("/product/:id");
   const [, setLocation] = useLocation();
   const id = params ? parseInt(params.id) : null;
   const product = HOOTI_CONFIG.products.find(p => p.id === id);
-  const [selectedSize, setSelectedSize] = useState<string | null>(null);
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
@@ -31,11 +30,7 @@ export default function ProductDetail() {
   }).format(product.price);
 
   const handleWhatsAppClick = () => {
-    if (!selectedSize) {
-      alert("Por favor selecciona una talla");
-      return;
-    }
-    const message = `¡Hola! Me llevo este modelo:\n\n🦉 Hoodie: ${product.name}\n📏 Talla: ${selectedSize}\n💰 Precio: ${formattedPrice}\n\n¿Podrían confirmarme disponibilidad y forma de pago?`;
+    const message = `¡Hola! Me llevo este modelo:\n\n🦉 Hoodie: ${product.name}\n💰 Precio: ${formattedPrice}\n\n¿Podrían confirmarme disponibilidad y forma de pago?`;
     const url = `https://wa.me/${HOOTI_CONFIG.whatsapp.numberClean}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
@@ -100,26 +95,6 @@ export default function ProductDetail() {
           </div>
 
           <div className="space-y-8 flex-grow">
-            <div className="space-y-4">
-              <h3 className="text-white font-bold uppercase tracking-widest text-sm">Selecciona Talla</h3>
-              <div className="flex flex-wrap gap-2">
-                {product.sizes.map((size) => (
-                  <button
-                    key={size}
-                    onClick={() => setSelectedSize(size)}
-                    className={cn(
-                      "min-w-[3rem] h-12 border flex items-center justify-center font-mono transition-all hover-elevate active-elevate-2",
-                      selectedSize === size 
-                        ? "bg-white text-black border-white" 
-                        : "bg-transparent text-white border-white/20 hover:border-white"
-                    )}
-                  >
-                    {size}
-                  </button>
-                ))}
-              </div>
-            </div>
-
             <p className="text-muted-foreground leading-relaxed text-lg">
               {product.description}
             </p>
