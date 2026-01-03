@@ -19,12 +19,6 @@ export function Footer() {
               <a href={HOOTI_CONFIG.social.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href={HOOTI_CONFIG.social.facebook} target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href={HOOTI_CONFIG.social.tiktok} target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all">
-                <Twitter className="w-5 h-5" />
-              </a>
             </div>
           </div>
 

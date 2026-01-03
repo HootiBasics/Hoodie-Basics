@@ -53,7 +53,5 @@ export interface SiteConfig {
   products: Product[];
   social: {
     instagram: string;
-    tiktok: string;
-    facebook: string;
   };
 }

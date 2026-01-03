@@ -184,8 +184,6 @@ export const HOOTI_CONFIG: SiteConfig = {
     }
   ],
   social: {
-    instagram: "https://instagram.com/hooti",
-    tiktok: "https://tiktok.com/@hooti",
-    facebook: "https://facebook.com/hooti"
+    instagram: "https://instagram.com/hooti"
   }
 };
