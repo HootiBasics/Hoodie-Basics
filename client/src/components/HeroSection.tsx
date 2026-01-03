@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { HOOTI_CONFIG } from "@/lib/config";
+import { HOOTI_CONFIG } from "@shared/config";
 import { ArrowDown } from "lucide-react";
 
 export function HeroSection() {

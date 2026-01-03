@@ -1,4 +1,4 @@
-import { HOOTI_CONFIG } from "@/lib/config";
+import { HOOTI_CONFIG } from "@shared/config";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 import { motion } from "framer-motion";
 

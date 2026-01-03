@@ -1,6 +1,6 @@
 import { motion, useScroll, useSpring } from "framer-motion";
 import { MessageCircle } from "lucide-react";
-import { HOOTI_CONFIG } from "@/lib/config";
+import { HOOTI_CONFIG } from "@shared/config";
 
 export function FloatingUI() {
   const { scrollYProgress } = useScroll();

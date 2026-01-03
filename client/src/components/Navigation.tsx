@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { HOOTI_CONFIG } from "@/lib/config";
+import { HOOTI_CONFIG } from "@shared/config";
 import { cn } from "@/lib/utils";
 
 export function Navigation() {
