@@ -64,6 +64,26 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Gallery View Section */}
+      <section id="gallery" className="py-32 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl font-black font-display uppercase tracking-tighter mb-4">
+              Nuestra Galería
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Explora nuestra colección completa. Diseños exclusivos pensados para la ciudad.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {HOOTI_CONFIG.products.map((product, idx) => (
+              <ProductCard key={product.id} product={product} index={idx} />
+            ))}
+          </div>
+        </div>
+      </section>
       
       {/* Footer / Contact Section Info */}
       <section className="py-32 container mx-auto px-4">
