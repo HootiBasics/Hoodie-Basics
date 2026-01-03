@@ -74,11 +74,11 @@ export default function Home() {
             viewport={{ once: true }}
             className="relative"
           >
-             <img 
-               src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop" 
-               alt="Fashion Lifestyle"
-               className="w-full h-[600px] object-cover filter grayscale contrast-125"
-             />
+            <img 
+              src="/products/Footer.jpeg" 
+              alt="Fashion Lifestyle"
+              className="w-full h-[600px] object-cover filter grayscale contrast-125"
+            />
              <div className="absolute -bottom-8 -right-8 w-64 h-64 border-4 border-primary z-[-1]" />
           </motion.div>
 
@@ -96,8 +96,8 @@ export default function Home() {
                 <p className="text-sm text-muted-foreground">Algodón premium de alto gramaje para máxima durabilidad.</p>
               </div>
               <div className="p-4 border border-white/10 hover:border-primary/30 transition-colors bg-white/5">
-                <h4 className="font-bold uppercase text-white mb-2">Corte</h4>
-                <p className="text-sm text-muted-foreground">Diseño minimalista y moderno que se adapta a tu estilo.</p>
+                <h4 className="font-bold uppercase text-white mb-2">PRODUCCIÓN</h4>
+                <p className="text-sm text-muted-foreground">Producción limitada. Cada pieza es única y exclusiva.</p>
               </div>
             </div>
           </div>

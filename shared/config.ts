@@ -184,6 +184,6 @@ export const HOOTI_CONFIG: SiteConfig = {
     }
   ],
   social: {
-    instagram: "https://instagram.com/hooti"
+    instagram: "https://www.instagram.com/hooti.basics?igsh=YXJ1ajQyaXBkaDR1"
   }
 };
