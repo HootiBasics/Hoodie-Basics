@@ -128,7 +128,8 @@ export const HOOTI_CONFIG: SiteConfig = {
       badge: "💎 Limitado",
       materials: "Poliéster Técnico",
       care: "Lavar a máquina",
-      fit: "Relajado"
+      fit: "Relajado",
+      size: "S, M, L, XL"
     },
     {
       id: 8,
@@ -144,7 +145,8 @@ export const HOOTI_CONFIG: SiteConfig = {
       badge: "🆕 Nuevo",
       materials: "Nylon Balístico",
       care: "Limpieza en seco",
-      fit: "Boxy"
+      fit: "Boxy",
+      size: "S, M, L, XL"
     },
     {
       id: 9,
@@ -160,7 +162,8 @@ export const HOOTI_CONFIG: SiteConfig = {
       badge: "🆕 Nuevo",
       materials: "Nylon Balístico",
       care: "Limpieza en seco",
-      fit: "Boxy"
+      fit: "Boxy",
+      size: "S, M, L, XL"
     },
     {
       id: 10,
@@ -177,7 +180,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       materials: "Nylon Balístico",
       care: "Limpieza en seco",
       fit: "Boxy",
-      
+      size: "S, M, L, XL"
     }
   ],
   social: {
