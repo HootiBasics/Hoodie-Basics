@@ -31,6 +31,7 @@ export interface Product {
   description: string;
   images: string[];
   colors: ProductColor[];
+  sizes: string[];
   category: string;
   badge?: string;
   materials: string;
