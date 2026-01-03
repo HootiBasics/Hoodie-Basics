@@ -85,6 +85,19 @@ export default function Home() {
         </div>
       </section>
       
+      {/* Artistic Separation */}
+      <div className="relative h-32 w-full overflow-hidden">
+        <div className="absolute inset-0 bg-background" />
+        <svg
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          className="absolute bottom-0 left-0 w-full h-full text-white/5 fill-current"
+        >
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5,73.84-4.36,147.54,16.88,218.2,35.26,69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113,2,1200,1.1V0Z" />
+        </svg>
+        <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+      </div>
+
       {/* Footer / Contact Section Info */}
       <section className="py-32 container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
