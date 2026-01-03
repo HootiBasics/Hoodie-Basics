@@ -103,6 +103,7 @@ export default function ProductDetail() {
             <div className="border-t border-white/10 pt-6 space-y-2 text-sm text-muted-foreground font-mono">
               <div className="flex justify-between"><span>Material</span><span className="text-white">{product.materials}</span></div>
               <div className="flex justify-between"><span>Fit</span><span className="text-white">{product.fit}</span></div>
+              <div className="flex justify-between"><span>Talla</span><span className="text-white">{product.size}</span></div>
               <div className="flex justify-between"><span>Cuidado</span><span className="text-white">{product.care}</span></div>
             </div>
           </div>

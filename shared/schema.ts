@@ -36,6 +36,7 @@ export interface Product {
   materials: string;
   care: string;
   fit: string;
+  size: string;
 }
 
 export interface SiteConfig {
