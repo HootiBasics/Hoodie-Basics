@@ -25,7 +25,7 @@ export default function Home() {
             </h2>
           </div>
           <p className="text-muted-foreground max-w-md text-right md:text-left">
-            Piezas limitadas diseñadas para destacar en la jungla de concreto.
+            Piezas limitadas diseñadas para destacar.
           </p>
         </div>
 
