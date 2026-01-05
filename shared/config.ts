@@ -185,5 +185,6 @@ export const HOOTI_CONFIG: SiteConfig = {
   ],
   social: {
     instagram: "https://www.instagram.com/hooti.basics?igsh=YXJ1ajQyaXBkaDR1"
-  }
+  },
+  contactEmail: "HootiBasics@outlook.es"
 };

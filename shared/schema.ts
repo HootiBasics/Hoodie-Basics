@@ -54,4 +54,5 @@ export interface SiteConfig {
   social: {
     instagram: string;
   };
+  contactEmail: string;
 }
