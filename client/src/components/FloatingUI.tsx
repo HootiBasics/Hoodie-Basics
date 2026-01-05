@@ -10,6 +10,8 @@ export function FloatingUI() {
     restDelta: 0.001
   });
 
+  const whatsappMessage = encodeURIComponent("Hola!\nEstoy interesado/a en sus hoodies y me gustaría aclarar algunas dudas antes de realizar la compra:)");
+
   return (
     <>
       {/* Scroll Progress Bar */}
@@ -20,7 +22,7 @@ export function FloatingUI() {
 
       {/* Floating WhatsApp Button */}
       <motion.a
-        href={`https://wa.me/${HOOTI_CONFIG.whatsapp.numberClean}`}
+        href={`https://wa.me/${HOOTI_CONFIG.whatsapp.numberClean}?text=${whatsappMessage}`}
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0 }}
