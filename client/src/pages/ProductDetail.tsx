@@ -30,7 +30,7 @@ export default function ProductDetail() {
   }).format(product.price);
 
   const handleWhatsAppClick = () => {
-    const message = `¡Hola! Me llevo este modelo:\n\n🦉 Hoodie: ${product.name}\n💰 Precio: ${formattedPrice}\n\n¿Podrían confirmarme disponibilidad y forma de pago?`;
+    const message = `Hola! Me llevo este modelo:\n\nHoodie: ${product.name}\nPrecio: ${formattedPrice}\n\n¿Podrían confirmarme disponibilidad y forma de pago?`;
     const url = `https://wa.me/${HOOTI_CONFIG.whatsapp.numberClean}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
