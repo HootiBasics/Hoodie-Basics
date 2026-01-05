@@ -18,7 +18,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       price: 25.00,
       currency: "usd",
       description: "Sudadera clásica con diseño Giant's Football. Comodidad y estilo deportivo.",
-      images: ["/products/giants-1.jpg", "/products/giants-2.jpg"],
+      images: ["/products/giants-1.jpg","/products/giants-2.jpg","/products/Crew_giant_azul.jpg"],
       colors: [
         { name: "Navy", hex: "#1a1a2e", available: true }
       ],
@@ -35,7 +35,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       price: 25.00,
       currency: "usd",
       description: "Diseño audaz con gráficos de terror urbano. Para destacar en la multitud.",
-      images: ["/products/freaks-1.jpeg", "/products/freaks-2.jpeg"],
+      images: ["/products/freaks-1.jpeg", "/products/freaks-2.jpeg","/products/Crew_zombies.jpeg"],
       colors: [
         { name: "Negro", hex: "#000000", available: true }
       ],
@@ -120,7 +120,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       price: 25.00,
       currency: "usd",
       description: "Crew rojo vibrante, que eleva cualquier básico y se convierte en la pieza clave de tu closet.",
-      images: ["/products/little-1.jpg", "/products/little-2.jpg"],
+      images: ["/products/Crew_red.jpeg", "/products/Crew_red2.jpeg"],
       colors: [
         { name: "Negro", hex: "#000000", available: true }
       ],
@@ -137,7 +137,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       price: 25.00,
       currency: "usd",
       description: "Block Hoodie con capucha, bolsillo canguro frontal y corte holgado, perfecto para el día a día.",
-      images: ["/products/blue-1.jpeg", "/products/blue-2.jpeg"],
+      images: ["/products/blue-1.jpeg", "/products/blue-2.jpeg","/products/Blook_hoodie_azul.jpeg","/products/Blook_hoodie_azul2.jpeg"],
       colors: [
         { name: "Azul", hex: "#4169E1", available: true }
       ],
@@ -170,7 +170,7 @@ export const HOOTI_CONFIG: SiteConfig = {
       name: "Black Hoodie",
       price: 25.00,
       currency: "usd",
-      description: "Chaqueta bomber reversible con interior acolchado para mayor calidez.",
+      description: "Hoodie negro esencial, con estampado en la espalda, capucha ajustable con cordones y bolsillo canguro frontal. Perfecto para un look urbano, cómodo y con personalidad.",
       images: ["/products/hockey-1.jpeg", "/products/hockey-2.jpeg"],
       colors: [
         { name: "Azul", hex: "#4169E1", available: true }

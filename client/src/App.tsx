@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { FloatingUI } from "@/components/FloatingUI";
 import Home from "@/pages/Home";
 import ProductDetail from "@/pages/ProductDetail";
+import Shipping from "@/pages/Shipping";
 import NotFound from "@/pages/not-found";
 import { useEffect } from "react";
 
@@ -23,6 +24,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/product/:id" component={ProductDetail} />
+      <Route path="/envios" component={Shipping} />
       <Route component={NotFound} />
     </Switch>
   );

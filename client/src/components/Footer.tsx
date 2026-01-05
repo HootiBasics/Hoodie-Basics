@@ -1,6 +1,7 @@
 import { HOOTI_CONFIG } from "@shared/config";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 
 export function Footer() {
 
@@ -28,9 +29,7 @@ export function Footer() {
               <h4 className="font-bold mb-6 text-lg uppercase tracking-wider">Ayuda</h4>
               <ul className="space-y-4 text-muted-foreground">
                 
-                <li><a href="#" className="hover:text-primary transition-colors">Envíos</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Devoluciones</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Tallas</a></li>
+                <li><Link href="/envios" className="hover:text-primary transition-colors">Envíos</Link></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Contacto</a></li>
               </ul>
             </div>
