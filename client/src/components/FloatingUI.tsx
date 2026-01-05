@@ -20,7 +20,7 @@ export function FloatingUI() {
 
       {/* Floating WhatsApp Button */}
       <motion.a
-        href={`https://wa.me/${HOOTI_CONFIG.whatsapp.numberClean}?text=${encodeURIComponent(HOOTI_CONFIG.whatsappMessage)}`}
+        href={`https://wa.me/${HOOTI_CONFIG.whatsapp.numberClean}`}
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0 }}

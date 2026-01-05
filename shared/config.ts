@@ -186,6 +186,5 @@ export const HOOTI_CONFIG: SiteConfig = {
   social: {
     instagram: "https://www.instagram.com/hooti.basics?igsh=YXJ1ajQyaXBkaDR1"
   },
-  contactEmail: "HootiBasics@outlook.es",
-  whatsappMessage: "Hola 👋 Estoy interesado/a en sus hoodies y me gustaría aclarar algunas dudas antes de realizar la compra:)"
+  contactEmail: "HootiBasics@outlook.es"
 };
