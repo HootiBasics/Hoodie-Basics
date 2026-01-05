@@ -21,7 +21,6 @@ export function Navigation() {
   const links = [
     { href: "/", label: "Home" },
     { href: "/#collection", label: "Colección" },
-    { href: "/#about", label: "Nosotros" },
   ];
 
   return (
