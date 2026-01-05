@@ -15,7 +15,7 @@ export const HOOTI_CONFIG: SiteConfig = {
     {
       id: 1,
       name: "Crew Giants Azul",
-      price: 30.00,
+      price: 25.00,
       currency: "usd",
       description: "Sudadera clásica con diseño Giant's Football. Comodidad y estilo deportivo.",
       images: ["/products/giants-1.jpg", "/products/giants-2.jpg"],
@@ -32,7 +32,7 @@ export const HOOTI_CONFIG: SiteConfig = {
     {
       id: 2,
       name: "Crew Zombie",
-      price: 30.00,
+      price: 25.00,
       currency: "usd",
       description: "Diseño audaz con gráficos de terror urbano. Para destacar en la multitud.",
       images: ["/products/freaks-1.jpeg", "/products/freaks-2.jpeg"],
