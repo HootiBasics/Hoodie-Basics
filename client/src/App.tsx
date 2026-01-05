@@ -9,6 +9,7 @@ import Home from "@/pages/Home";
 import ProductDetail from "@/pages/ProductDetail";
 import Shipping from "@/pages/Shipping";
 import Privacy from "@/pages/Privacy";
+import Terms from "@/pages/Terms";
 import NotFound from "@/pages/not-found";
 import { useEffect } from "react";
 
@@ -27,6 +28,7 @@ function Router() {
       <Route path="/product/:id" component={ProductDetail} />
       <Route path="/envios" component={Shipping} />
       <Route path="/privacy" component={Privacy} />
+      <Route path="/terms" component={Terms} />
       <Route component={NotFound} />
     </Switch>
   );

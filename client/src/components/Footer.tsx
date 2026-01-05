@@ -45,7 +45,7 @@ export function Footer() {
           <p>© 2025 {HOOTI_CONFIG.siteName} All Rights Reserved.</p>
           <div className="flex gap-8 mt-4 md:mt-0">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

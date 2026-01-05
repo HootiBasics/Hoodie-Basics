@@ -83,7 +83,7 @@ export default function Privacy() {
 
               <div className="space-y-4 border-l-4 border-primary pl-6 py-2 bg-primary/5">
                 <h2 className="text-2xl font-bold text-white uppercase tracking-tight">6. Política de devoluciones</h2>
-                <p className="font-bold text-primary">CANY Basics no realiza devoluciones ni reembolsos.</p>
+                <p className="font-bold text-primary">Hooti Basics no realiza devoluciones ni reembolsos.</p>
                 <p>Antes de realizar una compra, el cliente es responsable de verificar correctamente:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>La talla seleccionada</li>
