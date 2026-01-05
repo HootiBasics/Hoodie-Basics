@@ -55,4 +55,5 @@ export interface SiteConfig {
     instagram: string;
   };
   contactEmail: string;
+  whatsappMessage: string;
 }
