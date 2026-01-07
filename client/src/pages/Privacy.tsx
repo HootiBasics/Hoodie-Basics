@@ -11,7 +11,7 @@ export default function Privacy() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-6xl font-black font-display tracking-tighter mb-12 text-white uppercase">
-            Política de Privacidad
+            Políticas de Privacidad
           </h1>
 
           <div className="space-y-12 text-muted-foreground leading-relaxed">
