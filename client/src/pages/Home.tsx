@@ -29,23 +29,25 @@ export default function Home() {
           </p>
         </div>
 
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full"
-        >
-          <CarouselContent className="-ml-4">
-            {HOOTI_CONFIG.products.map((product, idx) => (
-              <CarouselItem key={product.id} className="pl-4 basis-full md:basis-1/2 lg:basis-1/4">
-                <ProductCard product={product} index={idx} />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="left-4" />
-          <CarouselNext className="right-4" />
-        </Carousel>
+        <div className="relative px-12 md:px-16">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {HOOTI_CONFIG.products.map((product, idx) => (
+                <CarouselItem key={product.id} className="pl-4 basis-full md:basis-1/2 lg:basis-1/4">
+                  <ProductCard product={product} index={idx} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="-left-12 md:-left-16" />
+            <CarouselNext className="-right-12 md:-right-16" />
+          </Carousel>
+        </div>
       </section>
 
       {/* Values/Marquee Section */}
