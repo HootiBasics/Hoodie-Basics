@@ -14,7 +14,7 @@ export function Footer() {
           <div className="md:col-span-6">
             <h2 className="text-4xl font-black font-display tracking-tighter mb-6">{HOOTI_CONFIG.siteName}</h2>
             <p className="text-muted-foreground mb-8 max-w-sm">
-              Ropa urbana diseñada para la nueva generación. Calidad y estilo sin compromisos.
+              Ropa urbana diseñada para la nueva generación. Calidad y estilo sin compromisos!
             </p>
             <div className="flex gap-4">
               <a href={HOOTI_CONFIG.social.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all">
