@@ -44,7 +44,7 @@ export function Footer() {
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-muted-foreground uppercase tracking-wider relative">
           <p>© 2026 {HOOTI_CONFIG.siteName} All Rights Reserved.</p>
           <div className="md:absolute md:left-1/2 md:-translate-x-1/2 mt-4 md:mt-0">
-            Diseñado por Nefi Lopez
+            By Nefi López
           </div>
           <div className="flex gap-8 mt-4 md:mt-0">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
